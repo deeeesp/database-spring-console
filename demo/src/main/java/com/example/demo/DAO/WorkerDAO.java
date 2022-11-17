@@ -17,4 +17,8 @@ public class WorkerDAO {
     public void save(Worker worker){
         workerRepository.save(worker);
     }
+
+    public Worker getById(long id){
+        return workerRepository.findById(id);
+    }
 }

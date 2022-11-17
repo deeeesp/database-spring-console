@@ -25,4 +25,14 @@ public class Worker {
 
     @OneToMany(mappedBy = "worker")
     private List<Flat> flats;
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", flats=" + flats +
+                '}';
+    }
 }
